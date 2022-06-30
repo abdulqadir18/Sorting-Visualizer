@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: #1B1A17;
+  color: white;
+  display: grid;
+  grid-template-columns: 30% 60%;
+  -moz-column-gap: 10%;
+  column-gap: 10%;
+  padding: 0% 5%;
+}
+
+nav .array-inputs {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  place-content: center;
+  padding: 5% 0%;
+}
+
+nav .array-inputs #array-size {
+  padding: 5% 0%;
+}
+
+nav .array-inputs #array-speed {
+  padding: 5% 0%;
+}
+
+nav .array-inputs #array-generate {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 4% 0%;
+}
+
+nav .array-inputs #array-generate:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+nav .header-right {
+  display: flex;
+  flex-direction: column;
+}
+
+nav .header-right .nav-heading {
+  display: inline-block;
+  font-size: xxx-large;
+  padding: 3% 0%;
+}
+
+nav .header-right .algos {
+  display: grid;
+  grid-template-columns: repeat(6, 16.6666666667%);
+  -moz-column-gap: 3.3333333333%;
+  column-gap: 3.3333333333%;
+  place-content: center;
+  padding: 2% 0%;
+}
+
+nav .header-right .algos button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 5% 0%;
+  font-size: x-large;
+}
+
+nav .header-right .algos button:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+nav .header-right .algos .locked {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header-right .algos .locked:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header-right .algos .selected {
+  background-color: white;
+  color: green;
+}
+
+nav .header-right .algos .selected:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+nav .header-right .algos .unselected:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+section .complexity-containers {
+  margin-top: 20%;
+}
+
+section .complexity-containers .pair {
+  margin-top: 5%;
+}
+
+section .complexity-containers .pair p {
+  display: inline;
+}
+
+section .complexity-containers .pair p.sub-heading {
+  font-size: medium;
+  text-transform: none;
+}
+
+section #time {
+  padding: 20% 10%;
+}
+
+section #time h3 {
+  text-decoration: underline;
+}
+
+section #array-container {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+}
+
+section #space {
+  padding: 20% 10%;
+}
+
+section #space h3 {
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  background-color: #1B1A17;
+  color: white;
+  margin-bottom: 0;
+  display: grid;
+  padding: 3%;
+}
+
+/*# sourceMappingURL=main.css.map */

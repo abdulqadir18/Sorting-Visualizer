@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="sass/main.css">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="array-inputs">
+        <p>Size of the array:</p>
+        <input id="array-size" type="range" min=20 max=150 step=1 value=80>
+        <p>Speed of the algorithm:</p>
+        <input id="array-speed" type="range" min=1 max=5 step=1 value=3>
+        <button id="array-generate">Generate New Array!</button>
+      </div>
+
+      <div class="header-right">
+        <p class="nav-heading">Sorting Visualizer</p>
+
+        <div class="algos">
+          <button>Bubble</button>
+          <button>Selection</button>
+          <button>Insertion</button>
+          <button>Merge</button>
+          <button>Quick</button>
+          <button>Heap</button>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <section>
+
+    <div id="time">
+      <h3>TIME COMPLEXITY</h3>
+      <div class="complexity-containers" id="Time_Complexity_Types_Container">
+        <div class="pair">
+          <p class="sub-heading">Worst Case:</p>
+          <p id="Time_Worst"></p>
+        </div>
+        <div class="pair">
+          <p class="sub-heading">Average Case:</p>
+          <p id="Time_Average"></p>
+        </div>
+        <div class="pair">
+          <p class="sub-heading">Best Case:</p>
+          <p id="Time_Best"></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="array-container">
+    </div>
+
+    <div id="space">
+      <h3>SPACE COMPLEXITY</h3>
+      <div class="complexity-containers" id="Space_Complexity_Types_Container">
+        <div class="pair">
+          <p class="sub-heading">Worst Case:</p>
+          <p id="Space_Worst"></p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    Made with ♥ by Abdul Qadir Boxwala
+  </footer>
+
+  <script src="./scripts/main.js"></script>
+  <script src="./scripts/visual.js"></script>
+  <script src="./scripts/bubble.js"></script>
+  <script src="./scripts/selection.js"></script>
+  <script src="./scripts/insertion.js"></script>
+  <script src="./scripts/merge.js"></script>
+  <script src="./scripts/quick.js"></script>
+  <script src="./scripts/heap.js"></script>
+</body>
+
+</html>
